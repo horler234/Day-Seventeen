@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="stylesheet" href="css/app.css">
+    <title>30 Days of Code- Day 16</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="counter-header">COUNTER</h1>
+      <h1 id="number">0</h1>
+      <button class="btn" id="addo" onclick="arithmetic()">ADD ME</button><br>
+      <button class="btn" id="subo" onclick="arithmetic2()">SUBTRACT ME</button>
+    </div>
+  </body>
+
+
+  <script type="text/javascript">
+      var clicks = 0;
+      function arithmetic() {
+        clicks+=1;
+        document.getElementById('number').innerHTML = clicks;
+
+        if (clicks < 0) {
+          document.getElementById('number').style.color = 'red';
+        }
+
+        else if (clicks > 0) {
+          document.getElementById('number').style.color = 'green';
+        }
+
+        else {
+          document.getElementById('number').style.color = 'yellow';
+        }
+      }
+
+      function arithmetic2() {
+        clicks-=1;
+        document.getElementById('number').innerHTML = clicks;
+
+        if (clicks < 0) {
+          document.getElementById('number').style.color = 'red';
+        }
+
+        else if (clicks > 0) {
+          document.getElementById('number').style.color = 'green';
+        }
+
+        else {
+          document.getElementById('number').style.color = 'yellow';
+        }
+      }
+
+    // addBtn.addEventListener("click", function() {
+    //   const value = ++add;
+    //   number.innerHTML = value;
+    //
+    //   if (add < -1) {
+    //     number.style.color = 'red';
+    //   }
+    //   else if (add > 1) {
+    //     number.style.color = 'blue';
+    //   }
+    //   else {
+    //     number.style.color = '#333333';
+    //   }
+    // })
+    //
+    // subBtn.addEventListener("click", function() {
+    //   const value = --add;
+    //   number.innerHTML = value;
+    //
+    //   if (add < -1) {
+    //     number.style.color = 'red';
+    //   }
+    //   else if (add > 1) {
+    //     number.style.color = 'blue';
+    //   }
+    //   else {
+    //     number.style.color = '#333333';
+    //   }
+    // })
+
+
+
+
+  </script>
+</html>
